@@ -6,32 +6,56 @@
     <meta name="description" content="Ejercicio: Desarrollar una aplicación web completa centrada en la arquitectura de la información utilizando HTML5."/>
     <meta name="keywords" content="Ferrari, coche, deportivo"/>
     <meta name="author" content="Alvaro Gutierrez Villalba"/>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
       body{
         background-color: whitesmoke;
       }
       nav {
         display: flex;
-        margin: 0;
-        padding: 0;
-        width: 100px;
+      }
+      img {
+        position: fixed;
       }
       #header_menu{
         display: flex;
         list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100px;
+        position: fixed;
+        margin-left: 100px;
+      }
+      li a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
       }
       .header_menu_button{
-        margin-right: 0;
-        padding: 25%;
-        cursor: pointer;
-        text-decoration: none;
+        padding: 25px;
+      }
+      main {
+        background-color: whitesmoke;
+      }
+      .Ferrari_Video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 100%;
+        z-index: -1;
+      }
+      .Ferrari_Video video {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+      }
+      .sections{
+        background-color: red;
       }
     </style>
     <title>Ferrari</title>
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
   </head>
   <body>
     <header>
@@ -39,18 +63,20 @@
         <img src="/assets/images/Ferrari_logo_.png" alt="Ferrari logo" width="100px" />
         <ul id="header_menu">
           <li class="header_menu_button"><a href="">RACING</a></li>
-          <li class="header_menu_button"><a href="">RACING</a></li>
-          <li class="header_menu_button"><a href="">RACING</a></li>
-          <li class="header_menu_button"><a href="">RACING</a></li>
-          <li class="header_menu_button"><a href="">RACING</a></li>
+          <li class="header_menu_button"><a href="">SPORT CARS</a></li>
+          <li class="header_menu_button"><a href="">COLECCIONES</a></li>
+          <li class="header_menu_button"><a href="">EXPERIENCIAS</a></li>
+          <li class="header_menu_button"><a href="">ABOUT US</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <video autoplay muted loop id="Ferrari_Video">
-        <source src="" type="">
-        Your browser does not support HTML5 video.
-      </video>
+      <section class="Ferrari_Video">
+        <video autoplay muted loop>
+          <source src="/assets/videos/Ferrari_F80.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </section>
     </main>
     <footer></footer>
   </body>
