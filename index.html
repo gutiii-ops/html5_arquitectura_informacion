@@ -7,6 +7,7 @@
     <meta name="keywords" content="Ferrari, coche, deportivo"/>
     <meta name="author" content="Alvaro Gutierrez Villalba"/>
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel='stylesheet' type='text/css'>
     <style>
       *{
         margin: 0;
@@ -14,6 +15,9 @@
       }
       body{
         background-color: whitesmoke;
+      }
+      header{
+        margin-top: 10px;
       }
       nav {
         display: flex;
@@ -27,23 +31,33 @@
         position: fixed;
         margin-left: 100px;
       }
-      li a {
+      .header_menu_button{
+        padding: 25px;
+      }
+      .header_menu_links{
         color: white;
         text-decoration: none;
         cursor: pointer;
+        font-family: Montserrat;
       }
-      .header_menu_button{
-        padding: 25px;
+      .header_menu_search{
+        position: fixed;
+        padding-top: 20px;
+        margin-left: 95%;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: Montserrat;
       }
       main {
         background-color: whitesmoke;
       }
       .Ferrari_Video {
         position: absolute;
-        top: 0;
-        left: 0;
         width: 100%; 
         height: 100%;
+        top: 0;
+        left: 0;
         z-index: -1;
       }
       .Ferrari_Video video {
@@ -62,17 +76,18 @@
       <nav>
         <img src="/assets/images/Ferrari_logo_.png" alt="Ferrari logo" width="100px" />
         <ul id="header_menu">
-          <li class="header_menu_button"><a href="">RACING</a></li>
-          <li class="header_menu_button"><a href="">SPORT CARS</a></li>
-          <li class="header_menu_button"><a href="">COLECCIONES</a></li>
-          <li class="header_menu_button"><a href="">EXPERIENCIAS</a></li>
-          <li class="header_menu_button"><a href="">ABOUT US</a></li>
+          <li class="header_menu_button"><a href="https://www.ferrari.com/en-ES/formula1" class="header_menu_links">RACING</a></li>
+          <li class="header_menu_button"><a href="https://www.ferrari.com/es-ES/auto/f80" class="header_menu_links">SPORT CARS</a></li>
+          <li class="header_menu_button"><a href="https://store.ferrari.com/en-gb/" class="header_menu_links">COLECCIONES</a></li>
+          <li class="header_menu_button"><a href="https://www.ferrari.com/en-ES/corse-clienti" class="header_menu_links">EXPERIENCIAS</a></li>
+          <li class="header_menu_button"><a href="https://www.ferrari.com/en-ES/corporate/about-us" class="header_menu_links">ABOUT US</a></li>
         </ul>
       </nav>
+      <a href="https://www.ferrari.com/es-ES/search" class="header_menu_search">SEARCH</a>
     </header>
     <main>
       <section class="Ferrari_Video">
-        <video autoplay muted loop>
+        <video autoplay muted loop alt="Video de presentacion del Ferrari F80">
           <source src="/assets/videos/Ferrari_F80.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
