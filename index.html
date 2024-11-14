@@ -10,9 +10,24 @@
       body{
         background-color: whitesmoke;
       }
-      header{
-        background-color: transparent;
-        position: absolute;
+      nav {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100px;
+      }
+      #header_menu{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100px;
+      }
+      .header_menu_button{
+        margin-right: 0;
+        padding: 25%;
+        cursor: pointer;
+        text-decoration: none;
       }
     </style>
     <title>Ferrari</title>
@@ -20,9 +35,9 @@
   </head>
   <body>
     <header>
-      <img src="/assets/images/Ferrari_logo_.png" alt="Ferrari logo" width="100px" />
-      <nav style="background-color: transparent">
-        <ul id="header_menu" style="background-color: transparent">
+      <nav>
+        <img src="/assets/images/Ferrari_logo_.png" alt="Ferrari logo" width="100px" />
+        <ul id="header_menu">
           <li class="header_menu_button"><a href="">RACING</a></li>
           <li class="header_menu_button"><a href="">RACING</a></li>
           <li class="header_menu_button"><a href="">RACING</a></li>
@@ -32,6 +47,10 @@
       </nav>
     </header>
     <main>
+      <video autoplay muted loop id="Ferrari_Video">
+        <source src="" type="">
+        Your browser does not support HTML5 video.
+      </video>
     </main>
     <footer></footer>
   </body>
