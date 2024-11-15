@@ -12,7 +12,7 @@
       *{
         margin: 0;
         padding: 0;
-        overflow-y: hidden;
+        /*overflow-y: hidden;*/
       }
       body{
         background-color: whitesmoke;
@@ -53,10 +53,10 @@
         font-size: 14px;
       }
       main {
-        background-color: whitesmoke;
+        background-color: transparent;
       }
       .Ferrari_Video {
-        position: absolute;
+        position: fixed;
         width: 100%; 
         height: 100%;
         top: 0;
@@ -68,8 +68,16 @@
         height: 100%;
         object-fit: cover;
       }
-      .sections{
-        background-color: red;
+      #first_section{
+        background-color: whitesmoke;
+        width: 100%;
+        height: 750px;
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-top: 100vh;
+        font-family: Montserrat;
       }
     </style>
     <title>Ferrari</title>
@@ -77,7 +85,7 @@
   <body>
     <header>
       <nav>
-        <img src="/assets/images/Ferrari_logo_.png" alt="Ferrari logo" width="100px" />
+        <img src="/assets/images/Ferrari_logo_.png" alt="Logo de Ferrari" width="100px" />
         <ul id="header_menu">
           <li class="header_menu_button"><a href="https://www.ferrari.com/en-ES/formula1" class="header_menu_links">RACING</a></li>
           <li class="header_menu_button"><a href="https://www.ferrari.com/es-ES/auto/f80" class="header_menu_links">SPORT CARS</a></li>
@@ -85,15 +93,23 @@
           <li class="header_menu_button"><a href="https://www.ferrari.com/en-ES/corse-clienti" class="header_menu_links">EXPERIENCIAS</a></li>
           <li class="header_menu_button"><a href="https://www.ferrari.com/en-ES/corporate/about-us" class="header_menu_links">ABOUT US</a></li>
         </ul>
+        <a href="https://www.ferrari.com/es-ES/search" class="header_menu_search">SEARCH</a>
       </nav>
-      <a href="https://www.ferrari.com/es-ES/search" class="header_menu_search">SEARCH</a>
     </header>
     <main>
       <section class="Ferrari_Video">
-        <video autoplay muted loop alt="Video de presentacion del Ferrari F80">
+        <video autoplay muted loop alt="Video de presentacion de Ferrai sobre el modelo F80">
           <source src="/assets/videos/Ferrari_F80.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
+      </section>
+      <section id="first_section">
+        <article>
+          <h1>Bienvenidos a Ferrari</h1>
+          <p>Esta es una sección de ejemplo que se muestra después del video.</p>
+          <p>Más información sobre Ferrari, coches deportivos y mucho más.</p>
+        </article>
+        <img src="" alt="">
       </section>
     </main>
     <footer></footer>
